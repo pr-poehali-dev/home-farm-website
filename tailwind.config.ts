@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1774416871242888320.html"
 	],
 	prefix: "",
 	theme: {
@@ -89,6 +90,23 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				display: ['Cormorant Garamond', 'serif'],
+				body: ['Golos Text', 'sans-serif'],
+			},
+			colors: {
+				earth: {
+					DEFAULT: 'hsl(28, 45%, 35%)',
+					light: 'hsl(35, 40%, 78%)',
+				},
+				leaf: {
+					DEFAULT: 'hsl(100, 40%, 32%)',
+					light: 'hsl(95, 35%, 88%)',
+					dark: 'hsl(105, 45%, 22%)',
+				},
+				cream: 'hsl(42, 35%, 95%)',
+				bark: 'hsl(25, 30%, 25%)',
 			}
 		}
 	},

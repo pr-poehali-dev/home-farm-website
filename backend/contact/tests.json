@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Missing fields",
+      "method": "POST",
+      "path": "/",
+      "body": {"name": "", "email": "", "message": ""},
+      "expectedStatus": 400
+    },
+    {
+      "name": "Valid contact form",
+      "method": "POST",
+      "path": "/",
+      "body": {"name": "Тест", "email": "test@test.ru", "phone": "+7999", "message": "Привет"},
+      "expectedStatus": 200
+    }
+  ]
+}

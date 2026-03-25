@@ -1,0 +1,32 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Missing fields",
+      "method": "POST",
+      "path": "/",
+      "body": {"package": "", "name": "", "phone": "", "email": "", "address": ""},
+      "expectedStatus": 400
+    },
+    {
+      "name": "Valid order",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "package": "starter",
+        "name": "Тест",
+        "phone": "+79991234567",
+        "email": "test@test.ru",
+        "address": "Москва, Тверская 1",
+        "delivery": "cdek",
+        "comment": ""
+      },
+      "expectedStatus": 200
+    }
+  ]
+}
